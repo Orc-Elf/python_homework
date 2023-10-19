@@ -1,5 +1,6 @@
 import math
 
+
 def isprime(number):
     if number <= 1:
         return False
@@ -28,10 +29,11 @@ def loop_2(my_str):
     else:
         print("不是回文")
 
+
 def loop_3():
     count = 0
     number = 2
-    while count<30:
+    while count < 30:
         number += 1
         if isprime(number):
             print(number, end=' ')
