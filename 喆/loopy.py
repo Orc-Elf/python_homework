@@ -37,15 +37,16 @@ from math import sqrt
 count=0
 n=2
 flag=True
+
 while count<30:
-   flag=True
-   for i in range(2,int(sqrt(n))+1):
+    flag=True
+    for i in range(2,int(sqrt(n))+1):
         if n%i==0:
-            flag=False
-            break
-   if flag:
+           flag=False
+           break
+    if flag:
         print(n,end='\t')
         count+=1
         if count%10==0:
             print(end='\n')
-   n+=1
+    n+=1
