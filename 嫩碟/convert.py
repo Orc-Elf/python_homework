@@ -1,18 +1,12 @@
-
 def convert(num):
     try:
         num = int(num)
         if not 0 <= num <= 2000:
-
-def convert(num):
-    try:
-        num = int(num)
-        if not 0 <= num <= 2000:
-
             raise ValueError("Please put number between 0 and 2000")
 
         one = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
-        two = ['', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+        two = ['', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen',
+               'nineteen']
         three = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
 
         def trans(n):
@@ -26,7 +20,6 @@ def convert(num):
                 return f"{one[n // 100]} hundred and {trans(n % 100)}" if n % 100 != 0 else f"{one[n // 100]} hundred"
             else:
                 return f"one thousand {trans(n % 1000)}" if n % 1000 != 0 else "one thousand"
-
 
         return trans(num)
 
