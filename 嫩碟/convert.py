@@ -23,7 +23,6 @@ def convert(num):
 
         return trans(num)
 
-        return trans(number)
 
     except Exception as e:
         return str(e)
