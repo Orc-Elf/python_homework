@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 def convert(num):
     try:
         num = int(num)
         if not 0 <= num <= 2000:
+=======
+def convert(number):
+    try:
+        number = int(number)
+        if not 0 <= number <= 2000:
+>>>>>>> origin/main
             raise ValueError("Please put number between 0 and 2000")
 
         one = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
@@ -20,7 +27,11 @@ def convert(num):
             else:
                 return f"one thousand {trans(n % 1000)}" if n % 1000 != 0 else "one thousand"
 
+<<<<<<< HEAD
         return trans(num)
+=======
+        return trans(number)
+>>>>>>> origin/main
     except Exception as e:
         return str(e)
 
