@@ -22,8 +22,6 @@ def convert(num):
                 return f"one thousand {trans(n % 1000)}" if n % 1000 != 0 else "one thousand"
 
         return trans(num)
-
-
     except Exception as e:
         return str(e)
 
