@@ -12,6 +12,7 @@ HEADER = {
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
 }
 
+
 # 循环抓取
 def fetch_movie_info(offset=0):
     print(f"请求第{offset + 1}到第{offset + 20 + 1}部电影的信息...")
@@ -48,6 +49,7 @@ def fetch_movie_info(offset=0):
 
     offset += 20
     time.sleep(3)
+
 
 def generate_wordcloud():
     movie_lists = Path('./').glob('*.txt')
@@ -94,6 +96,7 @@ def generate_wordcloud():
 
     # 将词云存入图片
     ws.to_file('wordcloud.png')
+
 
 # 主程序
 if __name__ == "__main__":

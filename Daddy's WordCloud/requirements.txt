@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+jieba
+wordcloud
+Scrapy
+numpy
+Pillow
+snownlp
+mysql-connector-python
