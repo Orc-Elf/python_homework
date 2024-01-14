@@ -452,11 +452,12 @@ if __name__ == "__main__":
 ```
 #### 运行结果:
 _词云图如下：_
-![wordcloud.png](wordcloud.png)
+![alt text](picture/wordcloud.png)
 _数据库中的数据结果如下：_
-![al_data.png](al_data.png)
+![alt text](picture/al_data.png)
 
 ### 完美结束
 
 #### 注：本次作业所需的包放在requirements.txt中，可以通过以下命令安装
+
 ```pip install -r requirements.txt```
